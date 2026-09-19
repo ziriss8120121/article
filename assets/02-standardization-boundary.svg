@@ -99,9 +99,11 @@
     <text class="decision-note" x="784" y="617">5〜1点それぞれの判定条件</text>
     <line x1="784" y1="640" x2="1026" y2="640" stroke="#fed7aa"/>
     <text class="example-label" x="784" y="668">例</text>
-    <text class="example" x="784" y="696">5：情報の追加なし</text>
-    <text class="example" x="784" y="722">3：推測だと明確で誤認なし</text>
-    <text class="example" x="784" y="748">1：重要条件を事実として追加</text>
+    <text class="example" x="784" y="690">5：情報の追加なし</text>
+    <text class="example" x="784" y="710">4：言い換えのみ</text>
+    <text class="example" x="784" y="730">3：推測だと明確で誤認なし</text>
+    <text class="example" x="784" y="750">2：一部を事実として追加</text>
+    <text class="example" x="784" y="770">1：重要条件を事実として追加</text>
 
     <rect x="1100" y="550" width="290" height="240" rx="18" fill="#ffffff" stroke="#fdba74"/>
     <text class="decision" x="1124" y="586">合格基準の内容</text>
