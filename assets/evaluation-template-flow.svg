@@ -1,0 +1,152 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="900" viewBox="0 0 1500 900" role="img" aria-labelledby="title desc">
+  <title id="title">LLM出力評価体系を3つのシートへ具体化する流れ</title>
+  <desc id="desc">スカウト文面自動生成を例に、Done定義シート、観点シート、項目シートをDone定義Noと観点Noで紐付ける流れを示す。</desc>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#0f172a" flood-opacity="0.10"/>
+    </filter>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,5 L0,10 z" fill="#64748b"/>
+    </marker>
+    <style>
+      .base { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans JP", "Yu Gothic", sans-serif; }
+      .title { font-size: 32px; font-weight: 700; fill: #0f172a; }
+      .subtitle { font-size: 18px; fill: #475569; }
+      .step { font-size: 15px; font-weight: 700; letter-spacing: 0.06em; }
+      .card-title { font-size: 25px; font-weight: 700; fill: #0f172a; }
+      .card-note { font-size: 16px; fill: #475569; }
+      .label { font-size: 15px; font-weight: 700; fill: #64748b; }
+      .value { font-size: 18px; font-weight: 600; fill: #1e293b; }
+      .value-small { font-size: 16px; font-weight: 500; fill: #334155; }
+      .id { font-size: 17px; font-weight: 800; fill: #7c3aed; }
+      .link-label { font-size: 15px; font-weight: 700; fill: #475569; }
+      .footer-title { font-size: 20px; font-weight: 700; fill: #0f172a; }
+      .footer-text { font-size: 17px; fill: #334155; }
+    </style>
+  </defs>
+
+  <rect width="1500" height="900" rx="24" fill="#f8fafc"/>
+
+  <g class="base">
+    <text class="title" x="70" y="58">評価体系を、3つのシートで具体化する</text>
+    <text class="subtitle" x="70" y="94">スカウト文面自動生成の「誤情報・誤誘導」を例にした記入イメージ</text>
+
+    <!-- Connection arrows -->
+    <line x1="470" y1="438" x2="535" y2="438" stroke="#64748b" stroke-width="3" marker-end="url(#arrow)"/>
+    <rect x="452" y="384" width="100" height="30" rx="15" fill="#ede9fe"/>
+    <text class="link-label" x="502" y="405" text-anchor="middle" fill="#6d28d9">Done定義No 3</text>
+
+    <line x1="955" y1="438" x2="1020" y2="438" stroke="#64748b" stroke-width="3" marker-end="url(#arrow)"/>
+    <rect x="948" y="384" width="86" height="30" rx="15" fill="#ede9fe"/>
+    <text class="link-label" x="991" y="405" text-anchor="middle" fill="#6d28d9">観点No 1</text>
+
+    <!-- Card 1 -->
+    <g filter="url(#shadow)">
+      <rect x="70" y="135" width="400" height="610" rx="22" fill="#ffffff"/>
+      <path d="M92 135 H448 Q470 135 470 157 V245 H70 V157 Q70 135 92 135 Z" fill="#dbeafe"/>
+    </g>
+    <rect x="94" y="157" width="76" height="28" rx="14" fill="#2563eb"/>
+    <text class="step" x="132" y="177" text-anchor="middle" fill="#ffffff">STEP 1</text>
+    <text class="card-title" x="94" y="218">Done定義シート</text>
+    <text class="card-note" x="94" y="269">共通カタログから評価対象を選ぶ</text>
+
+    <text class="label" x="94" y="313">Done定義No</text>
+    <rect x="94" y="326" width="54" height="34" rx="9" fill="#ede9fe"/>
+    <text class="id" x="121" y="349" text-anchor="middle">3</text>
+    <line x1="94" y1="378" x2="446" y2="378" stroke="#e2e8f0"/>
+
+    <text class="label" x="94" y="409">区分1</text>
+    <text class="value" x="94" y="438">事業リスク</text>
+    <line x1="94" y1="457" x2="446" y2="457" stroke="#e2e8f0"/>
+
+    <text class="label" x="94" y="488">区分2</text>
+    <text class="value" x="94" y="517">誤情報・誤誘導</text>
+    <line x1="94" y1="536" x2="446" y2="536" stroke="#e2e8f0"/>
+
+    <text class="label" x="94" y="567">目指す状態</text>
+    <text class="value-small" x="94" y="596">
+      <tspan x="94" dy="0">入力情報と整合し、虚偽・誤りを</tspan>
+      <tspan x="94" dy="25">含まない</tspan>
+    </text>
+
+    <rect x="94" y="664" width="352" height="54" rx="12" fill="#eff6ff" stroke="#bfdbfe"/>
+    <text class="value-small" x="113" y="687" font-weight="700">対象</text>
+    <text class="value-small" x="113" y="709">求人条件の誤りが事業リスクになるため</text>
+
+    <!-- Card 2 -->
+    <g filter="url(#shadow)">
+      <rect x="555" y="135" width="400" height="610" rx="22" fill="#ffffff"/>
+      <path d="M577 135 H933 Q955 135 955 157 V245 H555 V157 Q555 135 577 135 Z" fill="#ccfbf1"/>
+    </g>
+    <rect x="579" y="157" width="76" height="28" rx="14" fill="#0f766e"/>
+    <text class="step" x="617" y="177" text-anchor="middle" fill="#ffffff">STEP 2</text>
+    <text class="card-title" x="579" y="218">観点シート</text>
+    <text class="card-note" x="579" y="269">案件固有の「何を見るか」へ分解する</text>
+
+    <text class="label" x="579" y="313">観点No</text>
+    <rect x="579" y="326" width="54" height="34" rx="9" fill="#ede9fe"/>
+    <text class="id" x="606" y="349" text-anchor="middle">1</text>
+    <text class="label" x="687" y="313">参照するDone定義No</text>
+    <rect x="687" y="326" width="54" height="34" rx="9" fill="#ede9fe"/>
+    <text class="id" x="714" y="349" text-anchor="middle">3</text>
+    <line x1="579" y1="378" x2="931" y2="378" stroke="#e2e8f0"/>
+
+    <text class="label" x="579" y="409">観点</text>
+    <text class="value" x="579" y="438">求人条件の事実性</text>
+    <line x1="579" y1="457" x2="931" y2="457" stroke="#e2e8f0"/>
+
+    <text class="label" x="579" y="488">観点の説明</text>
+    <text class="value-small" x="579" y="517">
+      <tspan x="579" dy="0">年収・勤務地・雇用条件などが、</tspan>
+      <tspan x="579" dy="25">求人票と矛盾していないかを確認する</tspan>
+    </text>
+
+    <rect x="579" y="664" width="352" height="54" rx="12" fill="#f0fdfa" stroke="#99f6e4"/>
+    <text class="value-small" x="755" y="697" text-anchor="middle" font-weight="700">上位のDone定義へIDで遡れる</text>
+
+    <!-- Card 3 -->
+    <g filter="url(#shadow)">
+      <rect x="1040" y="135" width="390" height="610" rx="22" fill="#ffffff"/>
+      <path d="M1062 135 H1408 Q1430 135 1430 157 V245 H1040 V157 Q1040 135 1062 135 Z" fill="#ffedd5"/>
+    </g>
+    <rect x="1064" y="157" width="76" height="28" rx="14" fill="#c2410c"/>
+    <text class="step" x="1102" y="177" text-anchor="middle" fill="#ffffff">STEP 3</text>
+    <text class="card-title" x="1064" y="218">項目シート</text>
+    <text class="card-note" x="1064" y="269">採点できる問いと合格条件へ落とす</text>
+
+    <text class="label" x="1064" y="313">項目No</text>
+    <rect x="1064" y="326" width="54" height="34" rx="9" fill="#f1f5f9"/>
+    <text class="value" x="1091" y="350" text-anchor="middle">1</text>
+    <text class="label" x="1172" y="313">参照する観点No</text>
+    <rect x="1172" y="326" width="54" height="34" rx="9" fill="#ede9fe"/>
+    <text class="id" x="1199" y="349" text-anchor="middle">1</text>
+    <line x1="1064" y1="378" x2="1406" y2="378" stroke="#e2e8f0"/>
+
+    <text class="label" x="1064" y="409">評価項目</text>
+    <text class="value-small" x="1064" y="438">
+      <tspan x="1064" dy="0">求人票とスカウト文面の求人条件が</tspan>
+      <tspan x="1064" dy="25">整合しているか</tspan>
+    </text>
+    <line x1="1064" y1="482" x2="1406" y2="482" stroke="#e2e8f0"/>
+
+    <text class="label" x="1064" y="513">評価基準</text>
+    <text class="value" x="1064" y="542">5〜1点の判定条件</text>
+    <line x1="1064" y1="561" x2="1406" y2="561" stroke="#e2e8f0"/>
+
+    <text class="label" x="1064" y="592">合格基準</text>
+    <text class="value-small" x="1064" y="621">
+      <tspan x="1064" dy="0">n=10、平均3.0以上、</tspan>
+      <tspan x="1064" dy="25">かつ評価1が0件</tspan>
+    </text>
+
+    <rect x="1064" y="674" width="342" height="44" rx="12" fill="#fff7ed" stroke="#fed7aa"/>
+    <text class="value-small" x="1235" y="702" text-anchor="middle" font-weight="700">評価者が迷わず採点できる状態へ</text>
+
+    <!-- Footer -->
+    <rect x="70" y="786" width="1360" height="78" rx="18" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+    <circle cx="110" cy="825" r="18" fill="#7c3aed"/>
+    <path d="M102 825 L108 831 L119 819" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <text class="footer-title" x="145" y="817">IDで前後工程をつなぐ</text>
+    <text class="footer-text" x="145" y="846">評価項目から「なぜ評価するのか」まで遡れ、Done定義の抜け漏れも確認できる</text>
+  </g>
+</svg>
