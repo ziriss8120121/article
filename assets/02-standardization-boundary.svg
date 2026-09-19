@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1500" height="750" viewBox="0 115 1500 750" role="img" aria-labelledby="title desc">
   <title id="title">共通化した枠組みと案件ごとに決める内容</title>
-  <desc id="desc">評価区分とDone定義、Done定義から評価観点、評価基準、合格基準へ進む流れを共通化し、対象判定や具体的内容は案件ごとに決めることを示す。</desc>
+  <desc id="desc">評価区分と完了条件、完了条件から評価観点、評価基準、合格基準へ進む流れを共通化し、対象判定や具体的内容は案件ごとに決めることを示す。</desc>
   <defs>
     <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
       <path d="M0,0 L10,5 L0,10 z" fill="#64748b"/>
@@ -34,7 +34,7 @@
 
     <rect x="80" y="216" width="290" height="158" rx="18" fill="#ffffff" stroke="#818cf8" stroke-width="2"/>
     <text class="step" x="104" y="247">START</text>
-    <text class="stage" x="104" y="281">評価区分 ＋ Done定義</text>
+    <text class="stage" x="104" y="281">評価区分 ＋ 完了条件</text>
     <text class="stage-note" x="104" y="315">区分の階層と「目指す状態」を</text>
     <text class="stage-note" x="104" y="338">共通カタログとして用意</text>
     <rect x="104" y="350" width="128" height="25" rx="12" fill="#e0e7ff"/>
@@ -43,7 +43,7 @@
     <rect x="420" y="216" width="290" height="158" rx="18" fill="#ffffff" stroke="#a5b4fc" stroke-width="2"/>
     <text class="step" x="444" y="247">STEP 1</text>
     <text class="stage" x="444" y="281">評価観点</text>
-    <text class="stage-note" x="444" y="315">Done定義を案件固有の</text>
+    <text class="stage-note" x="444" y="315">完了条件を案件固有の</text>
     <text class="stage-note" x="444" y="338">「何を見るか」へ具体化</text>
     <rect x="444" y="350" width="150" height="25" rx="12" fill="#f1f5f9"/>
     <text class="badge" x="519" y="368" text-anchor="middle" fill="#475569">順序・FMTを共通</text>
@@ -78,7 +78,7 @@
 
     <rect x="80" y="550" width="290" height="240" rx="18" fill="#ffffff" stroke="#fdba74"/>
     <text class="decision" x="104" y="586">対象／対象外と判断理由</text>
-    <text class="decision-note" x="104" y="617">各Done定義を評価に使うか判断</text>
+    <text class="decision-note" x="104" y="617">各完了条件を評価に使うか判断</text>
     <line x1="104" y1="640" x2="346" y2="640" stroke="#fed7aa"/>
     <text class="example-label" x="104" y="668">例</text>
     <text class="example" x="104" y="696">誤情報・誤誘導：対象</text>
