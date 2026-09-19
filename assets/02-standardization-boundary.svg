@@ -45,24 +45,24 @@
     <text class="stage" x="444" y="281">評価観点</text>
     <text class="stage-note" x="444" y="315">完了条件を案件固有の</text>
     <text class="stage-note" x="444" y="338">「何を見るか」へ具体化</text>
-    <rect x="444" y="350" width="150" height="25" rx="12" fill="#f1f5f9"/>
-    <text class="badge" x="519" y="368" text-anchor="middle" fill="#475569">順序・FMTを共通</text>
+    <rect x="444" y="350" width="184" height="25" rx="12" fill="#f1f5f9"/>
+    <text class="badge" x="536" y="368" text-anchor="middle" fill="#475569">順序・フォーマットを共通</text>
 
     <rect x="760" y="216" width="290" height="158" rx="18" fill="#ffffff" stroke="#a5b4fc" stroke-width="2"/>
     <text class="step" x="784" y="247">STEP 2</text>
     <text class="stage" x="784" y="281">5段階の評価基準</text>
-    <text class="stage-note" x="784" y="315">評価者が同じ判断をできる</text>
-    <text class="stage-note" x="784" y="338">5〜1点の条件を定義</text>
-    <rect x="784" y="350" width="150" height="25" rx="12" fill="#f1f5f9"/>
-    <text class="badge" x="859" y="368" text-anchor="middle" fill="#475569">順序・FMTを共通</text>
+    <text class="stage-note" x="784" y="315">評価する人が同じ基準で</text>
+    <text class="stage-note" x="784" y="338">判断できる条件を定義</text>
+    <rect x="784" y="350" width="184" height="25" rx="12" fill="#f1f5f9"/>
+    <text class="badge" x="876" y="368" text-anchor="middle" fill="#475569">順序・フォーマットを共通</text>
 
     <rect x="1100" y="216" width="290" height="158" rx="18" fill="#ffffff" stroke="#a5b4fc" stroke-width="2"/>
     <text class="step" x="1124" y="247">STEP 3</text>
     <text class="stage" x="1124" y="281">合格基準</text>
     <text class="stage-note" x="1124" y="315">平均点・重大NGなどの</text>
     <text class="stage-note" x="1124" y="338">合格条件を定義</text>
-    <rect x="1124" y="350" width="150" height="25" rx="12" fill="#f1f5f9"/>
-    <text class="badge" x="1199" y="368" text-anchor="middle" fill="#475569">順序・FMTを共通</text>
+    <rect x="1124" y="350" width="184" height="25" rx="12" fill="#f1f5f9"/>
+    <text class="badge" x="1216" y="368" text-anchor="middle" fill="#475569">順序・フォーマットを共通</text>
 
     <!-- Down arrows -->
     <line x1="225" y1="374" x2="225" y2="536" stroke="#94a3b8" stroke-width="2.5" stroke-dasharray="7 7" marker-end="url(#arrow)"/>
@@ -74,7 +74,7 @@
     <rect x="55" y="470" width="1390" height="380" rx="24" fill="#fff7ed" stroke="#fed7aa" stroke-width="2"/>
     <rect x="80" y="494" width="228" height="34" rx="17" fill="#ea580c"/>
     <text class="band-label" x="194" y="518" text-anchor="middle" fill="#ffffff">案件ごとに判断する</text>
-    <text class="stage-note" x="336" y="517">機能の目的・入力・利用者・利用方法に合わせて中身を決める</text>
+    <text class="stage-note" x="336" y="517">機能の目的・入力・ユーザー・利用方法に合わせて中身を決める</text>
 
     <rect x="80" y="550" width="290" height="240" rx="18" fill="#ffffff" stroke="#fdba74"/>
     <text class="decision" x="104" y="586">対象／対象外と判断理由</text>
@@ -110,8 +110,8 @@
     <text class="decision-note" x="1124" y="617">平均点や重大NGの扱い</text>
     <line x1="1124" y1="640" x2="1366" y2="640" stroke="#fed7aa"/>
     <text class="example-label" x="1124" y="668">例</text>
-    <text class="example" x="1124" y="696">n=10</text>
-    <text class="example" x="1124" y="722">平均評価値3.0以上</text>
+    <text class="example" x="1124" y="696">評価対象：10件</text>
+    <text class="example" x="1124" y="722">平均点3.0以上</text>
     <text class="example" x="1124" y="748">かつ評価1が0件</text>
 
   </g>
