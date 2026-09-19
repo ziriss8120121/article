@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950" role="img" aria-labelledby="title desc">
+  <title id="title">評価区分を階層化して整理する</title>
+  <desc id="desc">LLM出力の評価を区分1の事業リスクとビジネス価値に分け、さらにそれぞれを5つの区分2へ分解した図。</desc>
+  <defs>
+    <marker id="arrow-blue" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#64748b"/>
+    </marker>
+    <style>
+      .base { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans JP", "Yu Gothic", sans-serif; }
+      .title { font-size: 34px; font-weight: 800; fill: #0f172a; }
+      .subtitle { font-size: 18px; fill: #475569; }
+      .root { font-size: 25px; font-weight: 800; fill: #ffffff; }
+      .k1 { font-size: 15px; font-weight: 800; letter-spacing: .08em; }
+      .group-title { font-size: 27px; font-weight: 800; fill: #0f172a; }
+      .group-desc { font-size: 16px; fill: #475569; }
+      .k2 { font-size: 14px; font-weight: 800; fill: #64748b; letter-spacing: .06em; }
+      .number { font-size: 15px; font-weight: 800; }
+      .item { font-size: 18px; font-weight: 700; fill: #1e293b; }
+      .footer-title { font-size: 20px; font-weight: 800; fill: #0f172a; }
+      .footer-text { font-size: 17px; fill: #334155; }
+    </style>
+  </defs>
+
+  <rect width="1500" height="950" rx="28" fill="#f8fafc"/>
+
+  <g class="base">
+    <text class="title" x="70" y="60">① 評価区分を階層化し、「何を見るか」の地図を作る</text>
+    <text class="subtitle" x="70" y="98">いきなり個別の評価基準を作らず、まず共通して検討する品質領域を整理</text>
+
+    <rect x="555" y="132" width="390" height="78" rx="20" fill="#334155"/>
+    <text class="root" x="750" y="181" text-anchor="middle">LLM出力の評価</text>
+
+    <path d="M750 210 V238 H390 V268" fill="none" stroke="#64748b" stroke-width="3" marker-end="url(#arrow-blue)"/>
+    <path d="M750 238 H1110 V268" fill="none" stroke="#64748b" stroke-width="3" marker-end="url(#arrow-blue)"/>
+
+    <!-- Business risk -->
+    <rect x="70" y="272" width="650" height="570" rx="24" fill="#ffffff" stroke="#bfdbfe" stroke-width="2"/>
+    <path d="M94 272 H696 Q720 272 720 296 V394 H70 V296 Q70 272 94 272 Z" fill="#dbeafe"/>
+    <rect x="100" y="298" width="74" height="28" rx="14" fill="#2563eb"/>
+    <text class="k1" x="137" y="318" text-anchor="middle" fill="#ffffff">区分1</text>
+    <text class="group-title" x="100" y="360">事業リスク</text>
+    <text class="group-desc" x="265" y="360">問題や損失を生じさせないか</text>
+    <text class="k2" x="100" y="428">区分2</text>
+
+    <rect x="100" y="448" width="590" height="58" rx="13" fill="#eff6ff"/>
+    <circle cx="132" cy="477" r="17" fill="#bfdbfe"/>
+    <text class="number" x="132" y="482" text-anchor="middle" fill="#1d4ed8">1</text>
+    <text class="item" x="166" y="484">公平性・差別</text>
+
+    <rect x="100" y="520" width="590" height="58" rx="13" fill="#eff6ff"/>
+    <circle cx="132" cy="549" r="17" fill="#bfdbfe"/>
+    <text class="number" x="132" y="554" text-anchor="middle" fill="#1d4ed8">2</text>
+    <text class="item" x="166" y="556">有害・危険コンテンツ</text>
+
+    <rect x="100" y="592" width="590" height="58" rx="13" fill="#eff6ff"/>
+    <circle cx="132" cy="621" r="17" fill="#bfdbfe"/>
+    <text class="number" x="132" y="626" text-anchor="middle" fill="#1d4ed8">3</text>
+    <text class="item" x="166" y="628">誤情報・誤誘導</text>
+
+    <rect x="100" y="664" width="590" height="58" rx="13" fill="#eff6ff"/>
+    <circle cx="132" cy="693" r="17" fill="#bfdbfe"/>
+    <text class="number" x="132" y="698" text-anchor="middle" fill="#1d4ed8">4</text>
+    <text class="item" x="166" y="700">プライバシー・機密情報</text>
+
+    <rect x="100" y="736" width="590" height="58" rx="13" fill="#eff6ff"/>
+    <circle cx="132" cy="765" r="17" fill="#bfdbfe"/>
+    <text class="number" x="132" y="770" text-anchor="middle" fill="#1d4ed8">5</text>
+    <text class="item" x="166" y="772">権利侵害</text>
+
+    <!-- Business value -->
+    <rect x="780" y="272" width="650" height="570" rx="24" fill="#ffffff" stroke="#99f6e4" stroke-width="2"/>
+    <path d="M804 272 H1406 Q1430 272 1430 296 V394 H780 V296 Q780 272 804 272 Z" fill="#ccfbf1"/>
+    <rect x="810" y="298" width="74" height="28" rx="14" fill="#0f766e"/>
+    <text class="k1" x="847" y="318" text-anchor="middle" fill="#ffffff">区分1</text>
+    <text class="group-title" x="810" y="360">ビジネス価値</text>
+    <text class="group-desc" x="1013" y="360">期待する価値を実現できるか</text>
+    <text class="k2" x="810" y="428">区分2</text>
+
+    <rect x="810" y="448" width="590" height="58" rx="13" fill="#f0fdfa"/>
+    <circle cx="842" cy="477" r="17" fill="#99f6e4"/>
+    <text class="number" x="842" y="482" text-anchor="middle" fill="#0f766e">6</text>
+    <text class="item" x="876" y="484">目的・タスク適合</text>
+
+    <rect x="810" y="520" width="590" height="58" rx="13" fill="#f0fdfa"/>
+    <circle cx="842" cy="549" r="17" fill="#99f6e4"/>
+    <text class="number" x="842" y="554" text-anchor="middle" fill="#0f766e">7</text>
+    <text class="item" x="876" y="556">完全性</text>
+
+    <rect x="810" y="592" width="590" height="58" rx="13" fill="#f0fdfa"/>
+    <circle cx="842" cy="621" r="17" fill="#99f6e4"/>
+    <text class="number" x="842" y="626" text-anchor="middle" fill="#0f766e">8</text>
+    <text class="item" x="876" y="628">関連性</text>
+
+    <rect x="810" y="664" width="590" height="58" rx="13" fill="#f0fdfa"/>
+    <circle cx="842" cy="693" r="17" fill="#99f6e4"/>
+    <text class="number" x="842" y="698" text-anchor="middle" fill="#0f766e">9</text>
+    <text class="item" x="876" y="700">指示遵守</text>
+
+    <rect x="810" y="736" width="590" height="58" rx="13" fill="#f0fdfa"/>
+    <circle cx="842" cy="765" r="17" fill="#99f6e4"/>
+    <text class="number" x="842" y="770" text-anchor="middle" fill="#0f766e">10</text>
+    <text class="item" x="876" y="772">表現品質</text>
+
+    <rect x="70" y="870" width="1360" height="52" rx="16" fill="#ffffff" stroke="#cbd5e1"/>
+    <circle cx="104" cy="896" r="15" fill="#334155"/>
+    <path d="M98 896 L103 901 L112 891" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text class="footer-title" x="132" y="903">評価対象の候補を共通の地図にする</text>
+    <text class="footer-text" x="500" y="903">抜け漏れを防ぎ、案件ごとの判断を同じ出発点から始められる</text>
+  </g>
+</svg>
